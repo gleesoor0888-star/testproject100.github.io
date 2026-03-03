@@ -309,6 +309,11 @@ body {
     .action-btn {
         padding: 10px 0;
         font-size: 14px;
+        background: linear-gradient(180deg, #0049a8 0%, #002f75 100%);
+    }
+    
+    .p2p-button {
+        background: linear-gradient(180deg, #0049a8 0%, #002f75 100%);
     }
     
     .btn-icon {
