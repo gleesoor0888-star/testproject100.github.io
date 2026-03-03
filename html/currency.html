@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор валюты</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <div class="currency-modal">
+        <div class="modal-header">
+            <button class="back-button" id="backButton">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h1 class="modal-title">Базовая валюта</h1>
+            <div class="placeholder"></div>
+        </div>
+
+        <div class="currency-list">
+            <button class="currency-select-item" data-currency="RUB">
+                <div class="currency-select-left">
+                    <img src="https://flagcdn.com/w40/ru.png" alt="RUB" class="currency-flag">
+                    <div class="currency-select-info">
+                        <span class="currency-select-code">RUB</span>
+                        <span class="currency-select-name">Russian Ruble</span>
+                    </div>
+                </div>
+                <div class="check-indicator">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+            </button>
+
+            <hr class="currency-divider">
+
+            <button class="currency-select-item" data-currency="USD">
+                <div class="currency-select-left">
+                    <img src="https://flagcdn.com/w40/us.png" alt="USD" class="currency-flag">
+                    <div class="currency-select-info">
+                        <span class="currency-select-code">USD</span>
+                        <span class="currency-select-name">United States Dollar</span>
+                    </div>
+                </div>
+                <div class="check-indicator">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+            </button>
+
+            <hr class="currency-divider">
+
+            <button class="currency-select-item" data-currency="EUR">
+                <div class="currency-select-left">
+                    <img src="https://flagcdn.com/w40/eu.png" alt="EUR" class="currency-flag">
+                    <div class="currency-select-info">
+                        <span class="currency-select-code">EUR</span>
+                        <span class="currency-select-name">Euro</span>
+                    </div>
+                </div>
+                <div class="check-indicator">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="currency.js"></script>
+</body>
+</html>
