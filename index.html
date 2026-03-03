@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="card-header">
+        <div id="user-icon-container" class="header-icon hidden">
+            <img id="user-telegram-icon" src="" alt="" class="telegram-icon">
+        </div>
+        <div class="header-currency">
+            <img src="https://example.com/currency-icon.png" alt="" class="currency-select-icon">
+        </div>
+    </div>
+
     <div class="wallet">
         <div class="balance-card">
             <div class="balance-main">
-                <div id="user-icon-container" class="user-icon hidden">
-                    <img id="user-telegram-icon" src="" alt="" class="telegram-icon">
-                </div>
-                
                 <div class="balance-label">Основной счёт</div>
                 <div class="balance-amount">₽ 0</div>
                 <div class="balance-label">Общий баланс в RUB</div>
@@ -38,7 +43,6 @@
         <div class="assets-card">
             <div class="assets-header">
                 <span>Мои активы ></span>
-                <span class="hide-small">Скрыть мелкие балансы</span>
             </div>
 
             <div class="currency-list">
