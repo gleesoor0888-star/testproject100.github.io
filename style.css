@@ -133,7 +133,7 @@ body {
 }
 
 .action-btn:active {
-    background: linear-gradient(180deg, #0049a8e8 0%, #002f75f1 100%);
+    background: linear-gradient(180deg, #0049a836 0%, #002f7548 100%);
 }
 
 .btn-icon {
@@ -277,7 +277,7 @@ body {
 }
 
 .p2p-button:active {
-    background: linear-gradient(180deg, #0049a8e1 0%, #002f75d5 100%);
+   background: linear-gradient(180deg, #0049a84d 0%, #002f753d 100%);
 }
 
 .p2p-left {
