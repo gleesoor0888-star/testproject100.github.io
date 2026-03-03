@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой кошелек</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallet">
+        <div class="balance-card">
+            <div class="balance-main">
+                <div id="user-icon-container" class="user-icon hidden">
+                    <img id="user-telegram-icon" src="" alt="" class="telegram-icon">
+                </div>
+                
+                <div class="balance-label">Основной счёт</div>
+                <div class="balance-amount">₽ 0</div>
+                <div class="balance-label">Общий баланс в RUB</div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn">
+                        <img src="https://example.com/icon1.png" alt="" class="btn-icon">
+                        <span class="btn-text">Пополнить</span>
+                    </button>
+                    <button class="action-btn">
+                        <img src="https://example.com/icon2.png" alt="" class="btn-icon">
+                        <span class="btn-text">Перевести</span>
+                    </button>
+                    <button class="action-btn">
+                        <img src="https://example.com/icon3.png" alt="" class="btn-icon">
+                        <span class="btn-text">Обменять</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="assets-card">
+            <div class="assets-header">
+                <span>Мои активы ></span>
+                <span class="hide-small">Скрыть мелкие балансы</span>
+            </div>
+
+            <div class="currency-list">
+                <button class="currency-item">
+                    <div class="currency-info">
+                        <img src="https://example.com/usdt-icon.png" alt="" class="currency-icon">
+                        <div class="currency-details">
+                            <span class="currency-name">Tether</span>
+                            <div class="currency-price-info">
+                                <span class="currency-price">0.999 ₽</span>
+                                <span class="currency-change">0.00%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="currency-balance">
+                        <div class="currency-amount">0 USDT</div>
+                        <div class="currency-total">0 ₽</div>
+                    </div>
+                </button>
+
+                <hr class="currency-divider">
+
+                <button class="currency-item">
+                    <div class="currency-info">
+                        <img src="https://example.com/ton-icon.png" alt="" class="currency-icon">
+                        <div class="currency-details">
+                            <span class="currency-name">Toncoin</span>
+                            <div class="currency-price-info">
+                                <span class="currency-price">1.24 ₽</span>
+                                <span class="currency-change positive">+2.08%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="currency-balance">
+                        <div class="currency-amount">0 TON</div>
+                        <div class="currency-total">0 ₽</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="telegram.js"></script>
+</body>
+</html>
