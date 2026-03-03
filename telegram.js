@@ -1,26 +1,32 @@
 const userIconContainer = document.getElementById('user-icon-container');
 const userIcon = document.getElementById('user-telegram-icon');
 
-function loadTelegramAvatar() {
+function updateAvatar() {
     if (window.Telegram && window.Telegram.WebApp) {
         const tg = window.Telegram.WebApp;
-        tg.ready();
-        
         const user = tg.initDataUnsafe?.user;
         
         if (user) {
             userIconContainer.classList.remove('hidden');
             
+            const timestamp = Date.now();
+            let avatarUrl = '';
+            
             if (user.photo_url) {
-                userIcon.src = user.photo_url + '?t=' + Date.now();
-            } else if (user.username) {
-                userIcon.src = 'https://t.me/i/userpic/320/' + user.username + '.jpg?t=' + Date.now();
+                avatarUrl = user.photo_url.includes('?') 
+                    ? user.photo_url + '&t=' + timestamp 
+                    : user.photo_url + '?t=' + timestamp;
             } else {
-                userIcon.src = 'https://t.me/i/userpic/320/' + user.id + '.jpg?t=' + Date.now();
+                avatarUrl = `https://t.me/i/userpic/320/${user.id}.jpg?t=` + timestamp;
             }
+            
+            userIcon.src = avatarUrl;
         }
     }
 }
 
-loadTelegramAvatar();
-setInterval(loadTelegramAvatar, 3000);
+if (window.Telegram && window.Telegram.WebApp) {
+    window.Telegram.WebApp.ready();
+    updateAvatar();
+    setInterval(updateAvatar, 3000);
+}
