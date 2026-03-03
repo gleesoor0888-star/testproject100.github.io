@@ -258,6 +258,45 @@ body {
     margin: 4px 0;
 }
 
+.p2p-button {
+    background: #1a1c22;
+    border: none;
+    border-radius: 18px;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.p2p-button:active {
+    background: #2c2f38;
+}
+
+.p2p-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.p2p-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.p2p-arrow {
+    color: #8e8e93;
+    font-size: 18px;
+}
+
 @media (max-width: 380px) {
     .balance-card {
         padding: 18px 16px;
