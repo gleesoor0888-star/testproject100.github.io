@@ -114,7 +114,7 @@ body {
 }
 
 .action-btn {
-    background: linear-gradient(180deg, #0049a84d 0%, #002f7559 100%);
+    background: linear-gradient(180deg, #0049a8 0%, #002f75 100%);
     border: none;
     border-radius: 14px;
     padding: 10px 0;
@@ -133,7 +133,7 @@ body {
 }
 
 .action-btn:active {
-    background: linear-gradient(180deg, #0049a83f 0%, #002f7562 100%);
+    background: linear-gradient(180deg, #0049a8e8 0%, #002f75f1 100%);
 }
 
 .btn-icon {
@@ -259,7 +259,7 @@ body {
 }
 
 .p2p-button {
-    background: linear-gradient(180deg, #0049a865 0%, #002f7579 100%);
+    background: linear-gradient(180deg, #0049a8 0%, #002f75 100%);
     border: none;
     border-radius: 14px;
     padding: 16px 20px;
@@ -277,7 +277,7 @@ body {
 }
 
 .p2p-button:active {
-    background: linear-gradient(180deg, #0049a850 0%, #002f7562 100%);
+    background: linear-gradient(180deg, #0049a8e1 0%, #002f75d5 100%);
 }
 
 .p2p-left {
@@ -309,11 +309,6 @@ body {
     .action-btn {
         padding: 10px 0;
         font-size: 14px;
-        background: linear-gradient(180deg, #0049a8 0%, #002f75 100%);
-    }
-    
-    .p2p-button {
-        background: linear-gradient(180deg, #0049a8 0%, #002f75 100%);
     }
     
     .btn-icon {
