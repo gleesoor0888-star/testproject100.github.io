@@ -29,10 +29,10 @@ body {
 .balance-card {
     background: #1a1c22;
     border-radius: 18px;
-    padding: 18px 25px;
+    padding: 15px 25px;
     text-align: center;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .balance-main {
@@ -89,7 +89,7 @@ body {
     background: #2c2f38;
     border: none;
     border-radius: 14px;
-    padding: 16px 0;
+    padding: 10px 0;
     color: #ffffff;
     font-size: 15px;
     font-weight: 500;
@@ -273,4 +273,3 @@ body {
         font-size: 15px;
     }
 }
-
